@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Imagine stocata pe serverele altora:</p>
+    <!-- Atributul src reprezinta sursa imaginii. Poate sa fie un link (daca imaginea este stocata pe un server) sau calea catre imaginea de pe calculatorul nostru.
+    Atributul alt este afisat/luat in calcul cand imaginea nu poate fi afisata. Adica daca serverul este picat, sau userul acceseaza site-ul cu un screen reader.
+    In mod normal width-ul este setat din CSS. -->
+    <img src="https://www.adrianapostol.ro/wp-content/uploads/2020/05/maxresdefault.jpg" alt="IT School logo" width="400px">
+    <p>Imagine stocata pe calculatorul nostru:</p>
+    <!-- Cum dam calea: pornim de la numele folderului aflat in acelasi folder cu fisierul nostru. Pentru a intra in folderul respectiv, punem caracterul "/". Ulterior scriem numele fisierului ce contine imaginea. -->
+    <img src="img/dogs.jpg" alt="dogs">
+
+    <p>Video stocat pe calculatorul nostru:</p>
+    <!-- Nu omite atributul controls, pentru a ii permite userului sa interactioneze cu videoclipul.-->
+    <video controls width="400px">
+        <!-- source contine sursa videoclipului (poate fi si un link), precum si tipul videoclipului. -->
+        <source src="videos/dogs.mp4" type="video/mp4">
+    </video>
+    <p>Video de pe youtube (alt site incorporat in site-ul nostru)</p>
+    <!-- De cele mai multe ori, cand vine vorba de video, este indicat sa fie pus pe youtube si incorporat in site-ul nostru. Practic, vrem sa includem un alt site (YouTube) in site-ul nostru. Pentru asta, folosim tag-ul iframe.
+    Mergem la videoclipul de pe Youtube, dam click pe butonul de share, dupa pe embed (incorporeaza). Ni se va genera iframe-ul, pe care il luam cu copy paste. -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ki0XXrlKlHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
+
+

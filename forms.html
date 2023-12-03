@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Intreg continutul formularului este impachetat de tag-ul form -->
+    <form>
+        <!-- Atributul for al tag-ului label trebuie sa aiba acceasi valoare cu a atributului id al tag-ului input. -->
+        <label for="username">Nume de utilizator:</label>
+        <!-- input type text este ultilizat cand vrem ca userul sa introduca text.
+        Atributul name este necesar pentru trimiterea datelor catre server.
+        Atributul placeholder va contine textul pe care utilizatorul il va vedea pana cand va incepe sa scrie ceva.
+        Atributul required il obliga pe user sa completeze inputul. -->
+        <input type="text" id="username" name="username" placeholder="Ex: dianag98" required>
+        <!-- In mod normal stilizarea am face-o de CSS. Tag-ul br semnifica "line break", trimitand textul de sub pe linia urmatoare. -->
+        <br>
+        <label for="password">Parola:</label>
+        <!-- input type password pune buline in loc de caractere. -->
+        <input type="password" id="password" name="password" required>
+
+        <p>Care dintre urmatoarele topicuri te intereseaza?</p>
+        <label for="html-css">HTML & CSS</label>
+        <!-- input type checkbox este o casuta ce poate fi bifata.
+        Atributul checked va afisa casuta direct bifata.
+        Atributul disabled va impiedica interactiunea userului cu inputul. -->
+        <input type="checkbox" name="html-css" id="html-css" checked disabled>
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" name="javascript" id="javascript">
+        <label for="react">React</label>
+        <input type="checkbox" name="react" id="react">
+
+        <p>Care este topicul tau preferat?</p>
+        <label for="html-css">HTML & CSS</label>
+        <!-- input type radio este un cerc pe poate fi bifat.
+        Diferenta intre radio si checkbox este ca dintre 3 inputuri type radio grupate, poti alege doar unul. La checkbox poti alege oricate, intre 0 si 3.
+        Cum grupam inputurile type radio? Le dam aceeasi valoare pentru atributul name (in acest caz favorite).
+        Pentru radio, este nevoie sa dam o valoare si pentru atributul value, intrucat serverul trebuie sa stie ce valoare a fost aleasa (avem acelasi nume). -->
+        <input type="radio" name="favorite" id="html-css" value="html-css">
+        <label for="javascript">JavaScript</label>
+        <input type="radio" name="favorite" id="javascript" value="javascript">
+        <label for="react">React</label>
+        <input type="radio" name="favorite" id="react" value="react">
+        
+        <br>
+        <!-- Input type submit este un buton, care atunci cand este apasat submite formularul.
+        Valoarea atributului value este textul afisat pe ecran pentru buton. -->
+        <input type="submit" value="Inregistreaza-te">
+        <!-- O alta varianta pentru butonul de submitere este sa folosim tag-ul button. -->
+        <!-- <button>Inregistreaza-te</button> -->
+    </form>
+
+    <!-- Daca butonul este in afara formularului, nu il submite. -->
+    <button>Apasa-ma, sunt in afara formularului</button>
+</body>
+</html>
